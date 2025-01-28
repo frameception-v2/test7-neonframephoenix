@@ -5,11 +5,13 @@ export async function GET() {
 
   const config = {
     accountAssociation: {
-      header:
-        "eyJmaWQiOjM2MjEsInR5cGUiOiJjdXN0b2R5Iiwia2V5IjoiMHgyY2Q4NWEwOTMyNjFmNTkyNzA4MDRBNkVBNjk3Q2VBNENlQkVjYWZFIn0",
-      payload: "eyJkb21haW4iOiJmcmFtZXMtdjIudmVyY2VsLmFwcCJ9",
-      signature:
-        "MHhiNDIwMzQ1MGZkNzgzYTExZjRiOTllZTFlYjA3NmMwOTdjM2JkOTY1NGM2ODZjYjkyZTAyMzk2Y2Q0YjU2MWY1MjY5NjI5ZGQ5NTliYjU0YzEwOGI4OGVmNjdjMTVlZTdjZDc2YTRiMGU5NzkzNzA3YzkxYzFkOWFjNTg0YmQzNjFi",
+      message: {
+        domain: "neonframephoenix.vercel.app",
+        timestamp: 1738078696,
+        expirationTime: 1745854696
+      },
+      signature: "0c34ca0bcd4eb0aa2fe9b844b93faa8f8e4a96707296bbd6b0d16cae2782960626426e156d93d17a9e1a3513c3c82245d00095d7851e2702cd9507a8180479ab1c",
+      signingKey: "ffef9e2e56e9d56bf326f8c002ec49c20cad87a3a860f7bd882db752d99cba0d"
     },
     frame: {
       version: "1",
