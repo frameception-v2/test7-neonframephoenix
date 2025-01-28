@@ -142,11 +142,26 @@ export default function Frame(
         paddingRight: context?.client.safeAreaInsets?.right ?? 0,
       }}
     >
-      <div className="w-[300px] mx-auto py-2 px-2 bg-black/90">
-        <h1 className={`text-3xl font-bold text-center mb-4 ${NEON_GRADIENT} bg-clip-text text-transparent`}>
+      <div className="w-[300px] mx-auto py-4 px-4 bg-black/95 border border-cyan-500/50">
+        <h1 className={`text-4xl font-bold text-center mb-6 ${NEON_GRADIENT} bg-clip-text text-transparent tracking-wider`}>
           {title}
         </h1>
-        <CyberpunkCard />
+        
+        <div className="relative group">
+          <div className={`absolute -inset-1 ${NEON_GRADIENT} rounded-lg blur opacity-30 group-hover:opacity-50 transition duration-200`}></div>
+          <a 
+            href="https://www.youtube.com/watch?v=pCo1g5NQAqc"
+            target="_blank"
+            rel="noopener noreferrer" 
+            className={`relative block w-full py-4 text-center text-2xl font-bold text-white border-2 border-cyan-500 rounded-lg ${NEON_GLOW} transition-all duration-200 hover:bg-cyan-500/20`}
+          >
+            ENTER
+          </a>
+        </div>
+
+        <p className="mt-6 text-sm text-center text-cyan-400/80">
+          Experience the neon-lit ambiance of a cyberpunk sanctuary
+        </p>
       </div>
     </div>
   );
