@@ -17,19 +17,26 @@ import { createStore } from "mipd";
 import { Label } from "~/components/ui/label";
 import { PROJECT_TITLE } from "~/lib/constants";
 
-function ExampleCard() {
+function CyberpunkCard() {
   return (
-    <Card className="border-neutral-200 bg-white">
+    <Card className="border-2 border-purple-500 bg-black/80 backdrop-blur-sm">
       <CardHeader>
-        <CardTitle className="text-neutral-900">Welcome to the Frame Template</CardTitle>
-        <CardDescription className="text-neutral-600">
-          This is an example card that you can customize or remove
+        <CardTitle className={`${NEON_GRADIENT} bg-clip-text text-transparent text-2xl font-bold`}>
+          {VIDEO_TITLE}
+        </CardTitle>
+        <CardDescription className="text-cyan-400">
+          Experience the neon-lit ambiance of a cyberpunk sanctuary
         </CardDescription>
       </CardHeader>
-      <CardContent className="text-neutral-800">
-        <p>
-          Your frame content goes here. The text is intentionally dark to ensure good readability.
-        </p>
+      <CardContent>
+        <div className="relative w-full pt-[56.25%]">
+          <iframe
+            className="absolute top-0 left-0 w-full h-full"
+            src={`https://www.youtube.com/embed/${VIDEO_ID}?autoplay=1&mute=1&controls=0&loop=1&playlist=${VIDEO_ID}`}
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          />
+        </div>
       </CardContent>
     </Card>
   );
@@ -135,9 +142,11 @@ export default function Frame(
         paddingRight: context?.client.safeAreaInsets?.right ?? 0,
       }}
     >
-      <div className="w-[300px] mx-auto py-2 px-2">
-        <h1 className="text-2xl font-bold text-center mb-4 text-neutral-900">{title}</h1>
-        <ExampleCard />
+      <div className="w-[300px] mx-auto py-2 px-2 bg-black/90">
+        <h1 className={`text-3xl font-bold text-center mb-4 ${NEON_GRADIENT} bg-clip-text text-transparent`}>
+          {title}
+        </h1>
+        <CyberpunkCard />
       </div>
     </div>
   );
