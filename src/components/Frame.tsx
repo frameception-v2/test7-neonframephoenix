@@ -170,8 +170,8 @@ export default function Frame(
             <div className="absolute -inset-0.5 bg-cyan-500/20 blur opacity-75"></div>
             <div className="relative p-4 bg-black/40 rounded-lg border border-cyan-500/30">
               <p className="text-xs text-cyan-300/60 leading-relaxed">
-                "In this digital realm, where neon dreams cascade through the virtual night, 
-                every pixel pulses with the heartbeat of tomorrow's dawn."
+                &quot;In this digital realm, where neon dreams cascade through the virtual night, 
+                every pixel pulses with the heartbeat of tomorrow&apos;s dawn.&quot;
               </p>
             </div>
           </div>
