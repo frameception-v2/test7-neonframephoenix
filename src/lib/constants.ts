@@ -5,3 +5,6 @@ export const VIDEO_ID = "pCo1g5NQAqc";
 export const VIDEO_TITLE = "Cozy Cyberpunk Loft";
 export const NEON_GRADIENT = "bg-gradient-to-r from-cyan-500 via-blue-500 to-purple-600";
 export const NEON_GLOW = "animate-pulse shadow-[0_0_15px_rgba(6,182,212,0.5)] hover:shadow-[0_0_25px_rgba(6,182,212,0.8)]";
+export const CYBERPUNK_BG = "bg-black/95 bg-[radial-gradient(circle_at_center,rgba(6,182,212,0.1)_0%,transparent_100%)]";
+export const GRID_OVERLAY = "before:content-[''] before:absolute before:inset-0 before:bg-[linear-gradient(rgba(6,182,212,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(6,182,212,0.05)_1px,transparent_1px)] before:bg-[size:20px_20px] before:opacity-30";
+export const BORDER_GLOW = "border border-cyan-500/30 shadow-[inset_0_0_15px_rgba(6,182,212,0.2)]";
